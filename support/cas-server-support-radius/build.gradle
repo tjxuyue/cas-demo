@@ -1,0 +1,12 @@
+description = "Apereo CAS RADIUS Support"
+
+dependencies {
+    implementation project(":support:cas-server-support-radius-core")
+    implementation project(":core:cas-server-core-authentication-api")
+    
+    implementation project(":core:cas-server-core-web-api")
+    implementation project(":core:cas-server-core-configuration-api")
+
+    testImplementation project(":core:cas-server-core-configuration-api")
+    testImplementation project(":core:cas-server-core-configuration")
+}
