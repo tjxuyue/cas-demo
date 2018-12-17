@@ -11,10 +11,10 @@ dependencies {
     implementation project(":core:cas-server-core-webflow-api")
     implementation project(":core:cas-server-core-validation-api")
 
-    testImplementation project(":core:cas-server-core-authentication-api")
-    testImplementation project(":core:cas-server-core-services")
-    testImplementation project(path: ":core:cas-server-core-services", configuration: "tests")
-    testImplementation project(path: ":core:cas-server-core-authentication-api", configuration: "tests")
+   testImplementation project(":core:cas-server-core-authentication-api")
+   testImplementation project(":core:cas-server-core-services")
+   testImplementation project(path: ":core:cas-server-core-services", configuration: "tests")
+   testImplementation project(path: ":core:cas-server-core-authentication-api", configuration: "tests")
 }
 
 

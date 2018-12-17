@@ -42,7 +42,7 @@ public class AmazonSnsProperties extends BaseAmazonWebServicesProperties {
      * The type of message that you are sending:
      * <ul>
      * <li>Promotional - Noncritical messages, such as marketing messages. Amazon SNS optimizes the message delivery to incur the lowest cost.    </li>
-     * <li>Transactional – Critical messages that support customer transactions, such as one-time passcodes
+     * <li>Transactional-Critical messages that support customer transactions, such as one-time passcodes
      * for multi-factor authentication. Amazon SNS optimizes the message delivery to achieve the highest reliability. </li>
      * </ul>
      */

@@ -23,7 +23,7 @@ dependencies {
     implementation project(":support:cas-server-support-u2f-core")
     implementation project(":support:cas-server-support-swivel-core")
     implementation project(":support:cas-server-support-gauth-core-mfa")
-    implementation project(":support:cas-server-support-duo-core-mfa")
+//    implementation project(":support:cas-server-support-duo-core-mfa")
     implementation project(":support:cas-server-support-yubikey-core-mfa")
     implementation project(":support:cas-server-support-radius-core-mfa")
     

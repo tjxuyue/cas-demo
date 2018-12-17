@@ -1217,11 +1217,11 @@ ext.libraries = [
                 dependencies.create("jcifs:jcifs:$jcifsVersion") {
                     exclude(group: "javax.servlet", module: "servlet-api")
                     force = true
-                },
-                dependencies.create("org.samba.jcifs:jcifs-ext:$jcifsExtVersion") {
-                    exclude(group: "javax.servlet", module: "servlet-api")
-                    force = true
                 }
+                // dependencies.create("org.samba.jcifs:jcifs-ext:$jcifsExtVersion") {
+                //     exclude(group: "javax.servlet", module: "servlet-api")
+                //     force = true
+                // }
         ],
         azurekeyvault           : [
                 dependencies.create("com.microsoft.azure:azure-keyvault-secrets-spring-boot-starter:$azureKeyVaultSecretsVersion") {
@@ -1249,7 +1249,22 @@ ext.libraries = [
             force = true
         },
         jradius                 : [
-                dependencies.create("com.github.coova:jradius:$jradiusVersion") {
+                dependencies.create("net.jradius:jradius-core:$jradiusVersion") {
+                    exclude(group: "commons-logging", module: "commons-logging")
+                    exclude(group: "log4j", module: "log4j")
+                    exclude(group: "org.slf4j", module: "slf4j-api")
+                    exclude(group: "commons-collections", module: "commons-collections")
+                    exclude(group: "commons-beanutils", module: "commons-beanutils")
+                    exclude(group: "org.bouncycastle", module: "bcprov-jdk15")
+                    exclude(group: "org.slf4j", module: "slf4j-log4j12")
+                    exclude(group: "org.springframework", module: "spring-beans")
+                    exclude(group: "org.springframework", module: "spring-context")
+                    exclude(group: "org.springframework", module: "spring-context-support")
+                    exclude(group: "org.springframework", module: "spring-core")
+                    exclude(group: "commons-lang", module: "commons-lang")
+                    force = true
+                },
+                dependencies.create("net.jradius:jradius-dictionary:$jradiusVersion") {
                     exclude(group: "commons-logging", module: "commons-logging")
                     exclude(group: "log4j", module: "log4j")
                     exclude(group: "org.slf4j", module: "slf4j-api")
@@ -2870,11 +2885,11 @@ ext.libraries = [
                 dependencies.create("net.unicon.iam:duo-java:$duoVersion") {
                     exclude(group: "org.slf4j", module: "slf4j-api")
                     force = true
-                },
-                dependencies.create("net.unicon.iam:duo-client:0.2.2") {
-                    exclude(group: "org.slf4j", module: "slf4j-api")
-                    force = true
                 }
+                // dependencies.create("net.unicon.iam:duo-client:0.2.2") {
+                //     exclude(group: "org.slf4j", module: "slf4j-api")
+                //     force = true
+                // }
         ],
         authyjava               : [
                 dependencies.create("com.authy:authy-java:$authyVersion") {
